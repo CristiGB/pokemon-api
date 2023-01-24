@@ -1,0 +1,23 @@
+
+.pokemon{
+    padding: 2rem;
+    background-color: rgb(255, 255, 255);
+    border-radius: .5rem;
+    transform: translateY(0);
+    transition: .3s;
+}
+    
+.pokemon > figure{
+    height: 14rem;
+}
+
+.pokemon__name{
+    color: #585858;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.pokemon:hover{
+    transform: translateY(-.3rem);
+    background-color: aliceblue;
+}

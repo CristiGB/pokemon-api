@@ -1,7 +1,7 @@
 import React from 'react';
 import { useParams } from "react-router-dom";
 import useGetPokemons from '../hooks/useGetPokemons';
-
+import '../styles/PokemonDetail.css'
 
 const otherImages = 'https://raw.githubusercontent.com/anchetaWern/pokeapi-json/master/data/v1/media/img/'; //1.png
 
@@ -19,9 +19,10 @@ function Pokemon({API}) {
       <h4 className="pokemon__numero"># {id}</h4>
 
       <p className="pokemon__experience">Base de experiencia: {pokemon.base_experience}</p>
-      <div className="pokemon__type"><p>Types:</p>
+      <p>Types:</p>
+      <div className="pokemon__type">
         {pokemon.types?.map(type => (
-          <p className="type__tag" key={`${id}${type.type.name}`}>{type.type.name}</p>
+          <p className={`type__tag ${type.type.name}`} key={`${id}${type.type.name}`}>{type.type.name}</p>
         ))}
       </div>
     </div>

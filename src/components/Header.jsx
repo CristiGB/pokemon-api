@@ -1,8 +1,14 @@
-import React from 'react'
+import React from 'react';
+import { Link } from "react-router-dom";
+import '../styles/Header.css'
 
 function Header() {
   return (
-    <div></div>
+    <header className='header'>
+      <Link to="/">
+        <h2>POKEMON</h2>
+      </Link>
+    </header>
   )
 }
 

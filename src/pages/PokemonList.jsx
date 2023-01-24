@@ -6,12 +6,10 @@ import '../styles/PokemonList.css'
 function PokemonList({API}) {
     let pokemons = useGetPokemons(`${API}?offset=0&limit=20`);
     pokemons = pokemons.results
-    return (
-        <section className="main-container">
-			<div className="pokemonsList">
-                {pokemons?.map((pokemon, index) => <Pokemon pokemon={pokemon} key={index}/>)}	
-			</div>
-		</section>
+    return (     
+		<div className="pokemonsList">
+            {pokemons?.map((pokemon, index) => <Pokemon pokemon={pokemon} key={index}/>)}	
+		</div>
     )
 }
 
