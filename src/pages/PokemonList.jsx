@@ -5,7 +5,7 @@ import '../styles/PokemonList.css'
 
 function PokemonList({API}) {
     const [pagina, setPagina] = useState(0)
-    let pokemons = useGetPokemons(`${API}?offset=${pagina}&limit=20`);
+    let pokemons = useGetPokemons(`${API}?offset=${pagina}&limit=150`);
     pokemons = pokemons.results
 
     // function useNextPage(){
