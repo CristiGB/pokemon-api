@@ -11,6 +11,7 @@ const useGetPokemons = (API) => {
 	const getData = async() => {
 		const response = await axios(API);
 		setPokemons(response.data);
+
 	};
 
     return pokemons;
