@@ -1,9 +1,13 @@
-
+.pokeList-container{
+    width: 100%;
+    max-width: 108rem;
+}
 
 .pokemonsList{
     display: grid;
-    grid-template-columns: repeat(4,20rem);
+    grid-template-columns: repeat(auto-fit,20rem);
     gap: 1rem;
+    justify-content: center;
 }
 
 .pagination{

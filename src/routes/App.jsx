@@ -1,4 +1,4 @@
-import React from 'react';
+// import {useState} from 'react';
 import { HashRouter , Routes, Route} from 'react-router-dom';
 import Layout from '../templates/Layout';
 import PokemonList from '../pages/PokemonList';
@@ -7,6 +7,9 @@ import PokemonDetail from '../pages/PokemonDetail'
 const API = 'https://pokeapi.co/api/v2/pokemon';
 
 function App() {
+  // const [pagina, setPagina] = useState(0)
+
+  
   return (
     <HashRouter>
       <Routes>

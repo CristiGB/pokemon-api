@@ -5,15 +5,14 @@ const useGetPokemons = (API) => {
     const [pokemons, setPokemons] = useState([]);
 
 	useEffect(() => {
-		getData();
+		getPokemons();
 	}, []);
 
-	const getData = async() => {
+	const getPokemons = async() => {
 		const response = await axios(API);
 		setPokemons(response.data);
-
 	};
-
+	
     return pokemons;
 };
 
